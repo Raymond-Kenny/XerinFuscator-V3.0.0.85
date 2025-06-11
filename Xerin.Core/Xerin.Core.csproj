@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Xerin.Core</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+		<OutputPath>bin\Debug\</OutputPath>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<OutputPath>bin\Release\</OutputPath>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+	</PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ADlY2vCxkZE4flNVDn.68tKYheVW5LN4TAJH9" />
+    <EmbeddedResource Include="ADlY2vCxkZE4flNVDn.68tKYheVW5LN4TAJH9" LogicalName="ADlY2vCxkZE4flNVDn.68tKYheVW5LN4TAJH9" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="dnlib" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xerin.Protections">
+      <HintPath>..\bin\Release\net48\Xerin.Protections.dll</HintPath>
+    </Reference>
+    <Reference Include="Xerin.Runtime">
+      <HintPath>..\bin\Release\net48\Xerin.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

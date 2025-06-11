@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>XerinFuscator G3</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>6</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+    <BaseOutputPath></BaseOutputPath>
+  </PropertyGroup>
+  <ItemGroup>    <PackageReference Include="dnlib" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+
+    <Reference Include="Guna.UI2">
+      <HintPath>..\bin\Release\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+
+    <Reference Include="System.Core" />
+    <Reference Include="Xerin.Core">
+      <HintPath>..\Xerin.Core2\bin\Debug\net48\Xerin.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xerin.Protections">
+      <HintPath>..\Xerin.Protections\bin\Debug\net48\Xerin.Protections.dll</HintPath>
+    </Reference>
+    <Reference Include="XVM.Core">
+      <HintPath>..\XVM.Core\bin\Debug\net48\XVM.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

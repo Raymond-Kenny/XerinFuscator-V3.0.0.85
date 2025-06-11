@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Xerin.Protections</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+		<OutputPath>bin\Debug\</OutputPath>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<OutputPath>bin\Release\</OutputPath>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+	</PropertyGroup>
+  <ItemGroup>
+    <None Remove="DcZcAew9nyWS7GE7cF.5p2o8cRu9tGoLdsYXq" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="dnlib" Version="4.5.0" />
+    <PackageReference Include="Ressy" Version="1.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xerin.Core2\Xerin.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Confuser.Core">
+      <HintPath>..\Confuser.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Confuser.Renamer">
+      <HintPath>..\Confuser.Renamer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="Xerin.Runtime">
+      <HintPath>..\bin\Release\net48\Xerin.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

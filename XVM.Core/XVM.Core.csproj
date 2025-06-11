@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>XVM.Core</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+    <BaseOutputPath></BaseOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="kaoxvfI9fcbVuDauOP.eDJPP2qYSYO6WHdln2" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="dnlib" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xerin.Core2\Xerin.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="Xerin.Runtime">
+      <HintPath>..\bin\Release\net48\Xerin.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="XVM.Runtime">
+      <HintPath>..\XVM.Runtime\bin\Debug\net472\XVM.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

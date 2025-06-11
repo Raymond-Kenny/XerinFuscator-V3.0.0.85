@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XerinFuscator-G3", "XerinFuscator G3\XerinFuscator-G3.csproj", "{B7DD9BF7-7F39-9F99-D8D4-448DED376F99}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59C8F5C7-25AE-5E92-EDD6-ED4601740861} = {59C8F5C7-25AE-5E92-EDD6-ED4601740861}
+		{934A8650-06DB-B3F6-A3F0-F7A6EB3904FF} = {934A8650-06DB-B3F6-A3F0-F7A6EB3904FF}
+		{B2CE7732-7393-8E98-7694-DA9E7E44C66D} = {B2CE7732-7393-8E98-7694-DA9E7E44C66D}
+		{F760662B-AE34-BF32-7014-5451CA9A8A81} = {F760662B-AE34-BF32-7014-5451CA9A8A81}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerin.Protections", "Xerin.Protections\Xerin.Protections.csproj", "{B2CE7732-7393-8E98-7694-DA9E7E44C66D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerin.Runtime", "Xerin.Runtime\Xerin.Runtime.csproj", "{934A8650-06DB-B3F6-A3F0-F7A6EB3904FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XVM.Core", "XVM.Core\XVM.Core.csproj", "{F760662B-AE34-BF32-7014-5451CA9A8A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XVM.Runtime", "XVM.Runtime\XVM.Runtime.csproj", "{59C8F5C7-25AE-5E92-EDD6-ED4601740861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerin.Core", "Xerin.Core\Xerin.Core.csproj", "{F3757B96-5CD1-32AD-A320-343AC43CE1F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7DD9BF7-7F39-9F99-D8D4-448DED376F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DD9BF7-7F39-9F99-D8D4-448DED376F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DD9BF7-7F39-9F99-D8D4-448DED376F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DD9BF7-7F39-9F99-D8D4-448DED376F99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2CE7732-7393-8E98-7694-DA9E7E44C66D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CE7732-7393-8E98-7694-DA9E7E44C66D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CE7732-7393-8E98-7694-DA9E7E44C66D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CE7732-7393-8E98-7694-DA9E7E44C66D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934A8650-06DB-B3F6-A3F0-F7A6EB3904FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934A8650-06DB-B3F6-A3F0-F7A6EB3904FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934A8650-06DB-B3F6-A3F0-F7A6EB3904FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934A8650-06DB-B3F6-A3F0-F7A6EB3904FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F760662B-AE34-BF32-7014-5451CA9A8A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F760662B-AE34-BF32-7014-5451CA9A8A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F760662B-AE34-BF32-7014-5451CA9A8A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F760662B-AE34-BF32-7014-5451CA9A8A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C8F5C7-25AE-5E92-EDD6-ED4601740861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C8F5C7-25AE-5E92-EDD6-ED4601740861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C8F5C7-25AE-5E92-EDD6-ED4601740861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C8F5C7-25AE-5E92-EDD6-ED4601740861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3757B96-5CD1-32AD-A320-343AC43CE1F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3757B96-5CD1-32AD-A320-343AC43CE1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3757B96-5CD1-32AD-A320-343AC43CE1F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3757B96-5CD1-32AD-A320-343AC43CE1F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C96AC4F0-3C4D-497D-B7D1-B9F8CF0A2133}
+	EndGlobalSection
+EndGlobal
