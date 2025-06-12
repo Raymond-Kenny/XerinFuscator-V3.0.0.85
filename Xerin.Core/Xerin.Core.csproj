@@ -36,10 +36,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml" />
     <Reference Include="Xerin.Protections">
-      <HintPath>..\bin\Release\net48\Xerin.Protections.dll</HintPath>
+      <HintPath>..\Release\Xerin.Protections.dll</HintPath>
     </Reference>
     <Reference Include="Xerin.Runtime">
-      <HintPath>..\bin\Release\net48\Xerin.Runtime.dll</HintPath>
+      <HintPath>..\Release\Xerin.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

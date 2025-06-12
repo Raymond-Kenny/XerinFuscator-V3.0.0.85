@@ -1965,21 +1965,85 @@ namespace XF
 
 		private void bgS(TreeNode P_0)
 		{
-		}
+            if (P_0.Tag is MethodTreeLoader.NodeInfo nodeInfo && (nodeInfo.Type == MethodTreeLoader.NodeType.Method || nodeInfo.Type == MethodTreeLoader.NodeType.Type))
+            {
+                if (nodeInfo.Type == MethodTreeLoader.NodeType.Method)
+                {
+                    P_0.ForeColor = (P_0.Checked ? MethodTreeLoader.Colors.SelectedMethod : MethodTreeLoader.GetMethodColor(nodeInfo.Method));
+                }
+                P_0.ImageIndex = (P_0.Checked ? 1 : 0);
+                P_0.SelectedImageIndex = P_0.ImageIndex;
+            }
+        }
 
-		private void Lg5(object sender, TreeNodeMouseClickEventArgs e)
-		{
-		}
+        private void Lg5(object P_0, TreeNodeMouseClickEventArgs P_1)
+        {
+            Q2i.BeginUpdate();
+            P_1.Node.Checked = !P_1.Node.Checked;
+            if (P_1.Node.Tag is MethodTreeLoader.NodeInfo nodeInfo)
+            {
+                if (nodeInfo.Type != MethodTreeLoader.NodeType.Method)
+                {
+                    if (nodeInfo.Type == MethodTreeLoader.NodeType.Type)
+                    {
+                        bgS(P_1.Node);
+                        MethodTreeLoader.UpdateChildNodes(P_1.Node, P_1.Node.Checked);
+                    }
+                }
+                else
+                {
+                    bgS(P_1.Node);
+                }
+            }
+            Q2i.EndUpdate();
+        }
 
-		private void lgs(object sender, TreeViewEventArgs e)
-		{
-		}
+        private void lgs(object P_0, TreeViewEventArgs P_1)
+        {
+            if (P_1.Action == TreeViewAction.Unknown)
+            {
+                return;
+            }
+            Q2i.BeginUpdate();
+            TreeNode node = P_1.Node;
+            if (node.Tag is MethodTreeLoader.NodeInfo nodeInfo)
+            {
+                if (nodeInfo.Type == MethodTreeLoader.NodeType.Type)
+                {
+                    bgS(node);
+                    MethodTreeLoader.UpdateChildNodes(node, node.Checked);
+                }
+                else if (nodeInfo.Type == MethodTreeLoader.NodeType.Method)
+                {
+                    bgS(node);
+                }
+                if (nodeInfo.Type == MethodTreeLoader.NodeType.Method)
+                {
+                    fgc(node.Parent);
+                }
+            }
+            Q2i.EndUpdate();
+        }
 
 		private void fgc(TreeNode P_0)
 		{
+			if (P_0 == null || !(P_0.Tag is MethodTreeLoader.NodeInfo nodeInfo) || nodeInfo.Type != MethodTreeLoader.NodeType.Type)
+			{
+				return;
+			}
+			bool flag = true;
+			foreach (TreeNode node in P_0.Nodes)
+			{
+				if (!node.Checked)
+				{
+					flag = false;
+				}
+			}
+			P_0.Checked = flag;
+			bgS(P_0);
 		}
 
-		private void tg7(TreeNode P_0, HashSet<string> P_1)
+        private void tg7(TreeNode P_0, HashSet<string> P_1)
 		{
 			foreach (TreeNode node in P_0.Nodes)
 			{

@@ -19,15 +19,15 @@
     <PackageReference Include="dnlib" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xerin.Core2\Xerin.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="System.Core" />
+    <Reference Include="Xerin.Core">
+      <HintPath>..\Release\Xerin.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Xerin.Runtime">
-      <HintPath>..\bin\Release\net48\Xerin.Runtime.dll</HintPath>
+      <HintPath>..\Release\Xerin.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="XVM.Runtime">
-      <HintPath>..\XVM.Runtime\bin\Debug\net472\XVM.Runtime.dll</HintPath>
+      <HintPath>..\Release\XVM.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

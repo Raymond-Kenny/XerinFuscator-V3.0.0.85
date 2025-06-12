@@ -8,7 +8,7 @@
     <Prefer32Bit>True</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <LangVersion>6</LangVersion>
+    <LangVersion>7.3</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
@@ -21,18 +21,21 @@
   <ItemGroup>
 
     <Reference Include="Guna.UI2">
-      <HintPath>..\bin\Release\net48\Guna.UI2.dll</HintPath>
+      <HintPath>..\Release\Guna.UI2.dll</HintPath>
     </Reference>
 
     <Reference Include="System.Core" />
+
     <Reference Include="Xerin.Core">
-      <HintPath>..\Xerin.Core2\bin\Debug\net48\Xerin.Core.dll</HintPath>
+      <HintPath>..\Release\Xerin.Core.dll</HintPath>
     </Reference>
+
     <Reference Include="Xerin.Protections">
-      <HintPath>..\Xerin.Protections\bin\Debug\net48\Xerin.Protections.dll</HintPath>
+      <HintPath>..\Release\Xerin.Protections.dll</HintPath>
     </Reference>
+
     <Reference Include="XVM.Core">
-      <HintPath>..\XVM.Core\bin\Debug\net48\XVM.Core.dll</HintPath>
+      <HintPath>..\Release\XVM.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
